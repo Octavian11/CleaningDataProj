@@ -10,14 +10,10 @@
 both files are proivded with the original Data set. For now these 561 columns are names V1, V2,V3....V561
 
 #### 2. Read in the activity data
- 1. Read in the data provided in the file names y_test.txt in a data frame. This is a data frame that contains activity labels for every observation in X_test
- 2. Read in the data provided in the file names y_train.txt in a data frame. This is a data frame that contains activity labels for every observation in y_test. The key for these labels is below:
-* 1 WALKING
-* 2 WALKING_UPSTAIRS
-* 3 WALKING_DOWNSTAIRS
-* 4 SITTING
-* 5 STANDING
-* 6 LAYING
+ 1. Read in the data provided in the file names y_test.txt in a data frame. This is a data frame that contains activity labels for every observation in X_test.
+ 2. Read in the data provided in the file names y_train.txt in a data frame. This is a data frame that contains activity labels for every observation in y_test.
+ 
+ These labels are in the form of integers 1-6.
 
 ***NOTE*** Now every observation is labeled with the kind of activity that it corresponds i.e. whether this observation was taken Walking or Standing or Laying and so forth.
 
@@ -42,3 +38,11 @@ We now have a DF with 86 columns and 10299 rows.
 #### 8. Add acivity and subject column
 Since these 2 columns were left as a result of step 7, we need to add them back. Now we have a DF with 88 columns.
 
+#### 9. Label in the activity data
+ Label the activity data with descriptive names instead of integers. This Key is provided in the original dataset in the file named "acivity_labels.txt"
+* 1 WALKING
+* 2 WALKING_UPSTAIRS
+* 3 WALKING_DOWNSTAIRS
+* 4 SITTING
+* 5 STANDING
+* 6 LAYING
